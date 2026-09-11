@@ -1,0 +1,24 @@
+{
+  "name": "@vaultkit/example-create-schedule",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "~40-line script showing how to create a VaultKit vesting schedule with the SDK.",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --eval \"process.exit(0)\"",
+    "clean": "rimraf .turbo"
+  },
+  "dependencies": {
+    "@vaultkit/sdk": "workspace:*",
+    "viem": "^2.21.40"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@vaultkit/config": "workspace:*",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}

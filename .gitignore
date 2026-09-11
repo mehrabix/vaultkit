@@ -1,0 +1,41 @@
+# --- dependencies ---
+node_modules/
+.pnpm-store/
+
+# --- build output ---
+dist/
+build/
+out/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# --- foundry ---
+# dependencies are vendored as git submodules, but their build output is not
+packages/contracts/cache/
+packages/contracts/out/
+packages/contracts/broadcast/*
+!packages/contracts/broadcast/**/dry-run/
+packages/contracts/lib/**/node_modules/
+
+# --- env & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- test / coverage ---
+coverage/
+lcov.info
+playwright-report/
+test-results/
+
+# --- editor / os ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log
+
+# --- internal planning docs (kept local, not published) ---
+MASTERPLAN.md

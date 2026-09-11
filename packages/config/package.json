@@ -1,0 +1,18 @@
+{
+  "name": "@vaultkit/config",
+  "version": "0.0.0",
+  "private": true,
+  "files": ["tsconfig", "eslint", "prettier"],
+  "exports": {
+    "./tsconfig/base.json": "./tsconfig/base.json",
+    "./tsconfig/library.json": "./tsconfig/library.json",
+    "./tsconfig/nextjs.json": "./tsconfig/nextjs.json",
+    "./prettier": "./prettier/index.mjs"
+  },
+  "scripts": {
+    "clean": "rimraf .turbo"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
+}

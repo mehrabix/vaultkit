@@ -1,0 +1,12 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+  - "examples/*"
+
+# pnpm >= 10 blocks dependency build scripts by default. esbuild ships its binary via postinstall;
+# keccak / bufferutil / utf-8-validate are native addons pulled in by viem and wagmi.
+allowBuilds:
+  bufferutil: true
+  esbuild: true
+  keccak: true
+  utf-8-validate: true
